@@ -8,24 +8,25 @@ let camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHei
 
 function init(){
     
-    camera.position.set(-900,-200,-900); // passed the x,y,z co-ordinates.
+    camera.position.set(-900,-200,-900); // passed the x,y,z co-ordinates for setting camera
 
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
 
-    var controls = new OrbitControls(camera, renderer.domElement);
+    var controls = new OrbitControls(camera, renderer.domElement); // Adding controls
     controls.addEventListener('change',renderer);
     controls.minDistance = 50;
     controls.maxDistance = 18000;
 
+    // Loading all the images for skybox
     let materialArray = [];
-    let texture_posx = new THREE.TextureLoader().load('posx.jpg');
-    let texture_negx = new THREE.TextureLoader().load('negx.jpg');
-    let texture_posy = new THREE.TextureLoader().load('posy.jpg');
-    let texture_negy = new THREE.TextureLoader().load('negy.jpg');
-    let texture_posz = new THREE.TextureLoader().load('posz.jpg');
-    let texture_negz = new THREE.TextureLoader().load('negz.jpg');
+    let texture_posx = new THREE.TextureLoader().load('posx.jpg'); //front 
+    let texture_negx = new THREE.TextureLoader().load('negx.jpg'); // right
+    let texture_posy = new THREE.TextureLoader().load('posy.jpg'); //top
+    let texture_negy = new THREE.TextureLoader().load('negy.jpg'); //bottom
+    let texture_posz = new THREE.TextureLoader().load('posz.jpg'); // back
+    let texture_negz = new THREE.TextureLoader().load('negz.jpg'); // left
 
     materialArray.push(new THREE.MeshBasicMaterial({map: texture_posx, side: THREE.DoubleSide}));
     materialArray.push(new THREE.MeshBasicMaterial({map: texture_negx, side: THREE.DoubleSide}));
