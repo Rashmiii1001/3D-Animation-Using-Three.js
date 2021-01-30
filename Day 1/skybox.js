@@ -21,12 +21,12 @@ function init(){
 
     // Loading all the images for skybox
     let materialArray = [];
-    let texture_posx = new THREE.TextureLoader().load('posx.jpg'); //front 
+    let texture_posx = new THREE.TextureLoader().load('posx.jpg'); //left 
     let texture_negx = new THREE.TextureLoader().load('negx.jpg'); // right
     let texture_posy = new THREE.TextureLoader().load('posy.jpg'); //top
     let texture_negy = new THREE.TextureLoader().load('negy.jpg'); //bottom
     let texture_posz = new THREE.TextureLoader().load('posz.jpg'); // back
-    let texture_negz = new THREE.TextureLoader().load('negz.jpg'); // left
+    let texture_negz = new THREE.TextureLoader().load('negz.jpg'); //front
 
     materialArray.push(new THREE.MeshBasicMaterial({map: texture_posx, side: THREE.DoubleSide}));
     materialArray.push(new THREE.MeshBasicMaterial({map: texture_negx, side: THREE.DoubleSide}));
