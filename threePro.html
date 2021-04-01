@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chemistry Project</title>
+    <style>
+      /* body
+      {
+      margin: 0;
+      }
+      canvas
+      {
+      width:100%;
+      height:100%;
+      } */
+      body {
+            overflow: hidden;
+            margin: 0px;
+        }
+        #info {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            color: snow;
+            font-size: 35px;
+            z-index: 100;
+            display:block;
+        }
+        #hydrogen_text{
+            position:absolute;
+            height: 35%;
+            width: 18%;
+            margin-top: 7%;
+            background-color: rgba(128, 128, 128, 0.486);
+            opacity: 0.4;
+            right : 80px;
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: snow;
+            border: 1px solid beige ;
+            padding: 3%;
+            display: none;
+        }
+        #helium_text{
+            position:absolute;
+            height: 40%;
+            width: 20%;
+            margin-top: 7%;
+            background-color: rgba(128, 128, 128, 0.486);
+            opacity: 0.4;
+            right : 80px;
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: snow;
+            border: 1px solid beige ;
+            padding: 3%;
+            display: none;
+        }
+        #berrylium_text{
+            position:absolute;
+            height: 35%;
+            width: 18%;
+            margin-top: 7%;
+            background-color: rgba(128, 128, 128, 0.486);
+            opacity: 0.4;
+            right : 80px;
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: snow;
+            border: 1px solid beige ;
+            padding: 3%;
+            display: none;
+        }
+        #lithium_text{
+            position:absolute;
+            height: 35%;
+            width: 18%;
+            margin-top: 7%;
+            background-color: rgba(128, 128, 128, 0.486);
+            opacity: 0.4;
+            right : 80px;
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: snow;
+            border: 1px solid beige ;
+            padding: 3%;
+            display: none;
+        }
+        #boron_text{
+            position:absolute;
+            height: 35%;
+            width: 18%;
+            margin-top: 7%;
+            background-color: rgba(128, 128, 128, 0.486);
+            opacity: 0.4;
+            right : 80px;
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: snow;
+            border: 1px solid beige ;
+            padding: 3%;
+            display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <script src="JS Files/three.js"></script>
+    <script src="JS Files/OrbitControls.js"></script>
+
+    <div id='info'>PERIODIC TABLE</div>
+    <div id = 'hydrogen_text'>HYDROGEN
+
+            <ul style="font-size: 23px; text-align: left;">
+                <li>Symbol: H</li>
+                <li>Atomic Nummber: 1</li>
+                <li>Atomic Mass: 1.008</li>
+                <li>Discovered by: Henry Cavendish</li>
+            </ul>
+    </div>
+
+    <div id = 'helium_text'>HELIUM
+            <ul style="font-size: 23px; text-align: left;">
+              <li>Symbol: He</li>
+              <li>Atomic Nummber: 2</li>
+              <li>Atomic Mass: 4.003</li>
+              <li>Discovered by: Sir William Ramsay, Per Teodor Cleve and Nils Abraham Langlet</li>
+            </ul>
+    </div>
+
+
+    <div id = 'lithium_text'>LITHIUM
+            <ul style="font-size: 23px; text-align: left;">
+              <li>Symbol: Li</li>
+              <li>Atomic Nummber: 3</li>
+              <li>Atomic Mass: 6.941</li>
+              <li>Discovered by: Johann Artvedson</li>
+            </ul>
+    </div>
+
+
+    <div id = 'berrylium_text'>BERRYLIUM
+            <ul style="font-size: 23px; text-align: left;">
+              <li>Symbol: Be</li>
+              <li>Atomic Nummber: 4</li>
+              <li>Atomic Mass: 9.01218</li>
+              <li>Discovered by: Nicholas Louis Vauquelin</li>
+            </ul>
+    </div>
+
+    <div id = 'boron_text'>BORON
+
+            <ul style="font-size: 23px; text-align: left;">
+              <li>Symbol: B</li>
+              <li>Atomic Nummber: 5</li>
+              <li>Atomic Mass: 10.821</li>
+              <li>Discovered by: joseph Louis Gay-Lussac</li>
+            </ul>
+    </div>
+
+
+    <script src="pro.js"></script>
+  </body>
+</html>
